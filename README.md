@@ -22,6 +22,31 @@ npm run dev
 http://127.0.0.1:5173
 ```
 
+## 公开部署
+
+项目使用 GitHub Pages 部署。推送到 `main` 后，GitHub Actions 会运行类型检查、测试、构建并发布 `dist/`。
+
+预期公开地址：
+
+```text
+https://luo896.github.io/fruit-fusion/
+```
+
+## 添加到手机主屏幕
+
+项目已经包含 PWA 基础配置：
+
+- `public/manifest.webmanifest`
+- `public/sw.js`
+- `public/icons/icon-192.png`
+- `public/icons/icon-512.png`
+- iOS 所需的 `apple-mobile-web-app-*` 和 `apple-touch-icon` meta
+
+使用方式：
+
+- iPhone Safari：打开公开地址，点击分享按钮，选择“添加到主屏幕”。
+- Android Chrome：打开公开地址，浏览器通常会显示“安装应用”，也可以从菜单选择“添加到主屏幕”。
+
 ## 常用命令
 
 ```bash
